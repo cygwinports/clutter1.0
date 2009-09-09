@@ -1,0 +1,10 @@
+category: X11
+requires: libcairo2 libgcc1 libgdk_pixbuf2.0_0 libglib2.0_0 libGL1 libintl8 libpango1.0_0 libX11_6 libXcomposite1 libXdamage1 libXext6 libXfixes3
+external-source: clutter1.0
+sdesc: "OpenGL-based animated GUI library (runtime)"
+ldesc: "Clutter is an open source software library for creating fast, 
+visually rich and animated graphical user interfaces.
+
+Clutter uses OpenGL for rendering but with an API which hides the 
+underlying GL complexity from the developer. The Clutter API is intended 
+to be easy to use, efficient and flexible."

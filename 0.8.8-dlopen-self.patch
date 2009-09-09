@@ -1,0 +1,14 @@
+Cygwin doesn't support finding symbols in dependencies with dlopen(NULL,...),
+so use the backup g_module_open(NULL,...) which does support it.
+
+--- origsrc/clutter-0.8.8/clutter/cogl/gl/cogl.c	2009-02-20 09:41:39.000000000 -0600
++++ src/clutter-0.8.8/clutter/cogl/gl/cogl.c	2009-02-24 13:53:36.216750000 -0600
+@@ -85,7 +85,7 @@ cogl_get_proc_address (const gchar* name
+   /* Sucks to ifdef here but not other option..? would be nice to
+    * split the code up for more reuse (once more backends use this
+    */
+-#if defined(HAVE_CLUTTER_GLX)
++#if defined(HAVE_CLUTTER_GLX) && !defined(__CYGWIN__)
+   static GLXGetProcAddressProc get_proc_func = NULL;
+   static void                 *dlhand = NULL;
+ 
