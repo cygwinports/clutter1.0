@@ -8,19 +8,19 @@ underlying GL complexity from the developer. The Clutter API is intended
 to be easy to use, efficient and flexible.
 
 Runtime requirements:
-  cygwin-1.7.0-60
+  cygwin-1.7.0-62
   libcairo2-1.8.8-1
-  libgcc1-4.3.2-2
-  libgdk_pixbuf2.0_0-2.16.5-1
-  libGL1-7.4.4-1
+  libgcc1-4.3.4-1
+  libgdk_pixbuf2.0_0-2.16.6-1
+  libGL1-7.5.2-1
   libglib2.0_0-2.20.5-1
   libintl8-0.17-11
   libpango1.0_0-1.24.5-1
-  libX11_6-1.2.2-1
-  libXcomposite1-0.4.0-10
-  libXdamage1-1.1.1-10
-  libXext6-1.0.5-10
-  libXfixes3-4.0.3-10
+  libX11_6-1.3.1-1
+  libXcomposite1-0.4.1-1
+  libXdamage1-1.1.2-1
+  libXext6-1.1.1-1
+  libXfixes3-4.0.4-1
 
 Build requirements:
 (besides corresponding -devel packages)
@@ -29,7 +29,7 @@ Build requirements:
   binutils-2.19.51-1
   cygport-0.9.9-1
   gawk-3.1.7-1
-  gcc4-core-4.3.2-2
+  gcc4-core-4.3.4-1
   gnome-common-2.26.0-2
   gobject-introspection-0.6.5-1
   gtk-doc-1.11-2
@@ -47,20 +47,24 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack clutter1.0-1.0.2-X-src.tar.bz2
+  unpack clutter1.0-1.0.8-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./clutter1.0-1.0.2-X.cygport all
+  cygport ./clutter1.0-1.0.8-X.cygport all
 
 This will create:
-  /usr/src/clutter1.0-1.0.2-X-src.tar.bz2
-  /usr/src/libclutter1.0-devel-1.0.2-X.tar.bz2
-  /usr/src/libclutter1.0_0-1.0.2-X.tar.bz2
+  /usr/src/clutter1.0-1.0.8-X-src.tar.bz2
+  /usr/src/gobject-instrospection-Clutter1.0-1.0.8-X.tar.bz2
+  /usr/src/libclutter1.0-devel-1.0.8-X.tar.bz2
+  /usr/src/libclutter1.0_0-1.0.8-X.tar.bz2
 
 -------------------------------------------
 
 Port Notes:
+
+----- version 1.0.8-1 -----
+Version bump.
 
 ----- version 1.0.2-1 -----
 Initial release of 1.0 API for Cygwin 1.7.
