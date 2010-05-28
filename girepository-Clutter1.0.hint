@@ -1,5 +1,5 @@
 category: X11
-requires: libclutter1.0_0 girepository-GLib2.0 girepository-Pango1.0 girepository-x11
+requires: libclutter1.0_0 girepository-GLib2.0 girepository-Json1.0 girepository-Pango1.0 girepository-x11
 external-source: clutter1.0
 sdesc: "OpenGL-based animated GUI library (GObjectIntrospection data)"
 ldesc: "Clutter is an open source software library for creating fast, 
