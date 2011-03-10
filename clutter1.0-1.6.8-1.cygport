@@ -13,10 +13,9 @@ libclutter1_0_0_CONTENTS="usr/bin/*-1.0-0.dll usr/share/doc/ usr/share/locale/"
 libclutter1_0_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/"
 girepository_Clutter1_0_CONTENTS="usr/*/gir*/*-1.0.*"
 
-DIFF_EXCLUDES="clutter-*.h"
+DIFF_EXCLUDES="clutter-*.h .gitignore README"
 
 CYGCONF_ARGS="
 	--with-flavour=glx
 	--with-imagebackend=gdk-pixbuf
 "
-MAKEOPTS+=" MKINSTALLDIRS=/usr/bin/mkdirhier"
