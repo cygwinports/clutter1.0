@@ -4,9 +4,7 @@ inherit gnome2
 DESCRIPTION="OpenGL animated GUI library"
 HOMEPAGE="http://clutter-project.org/"
 SRC_URI="http://www.clutter-project.org/sources/${ORIG_PN}/${PV_MAJ_MIN}/${ORIG_PN}-${PV}.tar.bz2"
-PATCH_URI="
-	0.8.0-no-undefined.patch
-"
+PATCH_URI="1.8.2-cygwin.patch"
 
 PKG_NAMES="lib${PN}_0 lib${PN}-devel girepository-Clutter1.0"
 libclutter1_0_0_CONTENTS="usr/bin/*-1.0-0.dll usr/share/doc/ usr/share/locale/"
@@ -15,7 +13,4 @@ girepository_Clutter1_0_CONTENTS="usr/*/gir*/*-1.0.*"
 
 DIFF_EXCLUDES="clutter-*.h .gitignore README"
 
-CYGCONF_ARGS="
-	--with-flavour=glx
-	--with-imagebackend=gdk-pixbuf
-"
+CYGCONF_ARGS="--with-flavour=glx"

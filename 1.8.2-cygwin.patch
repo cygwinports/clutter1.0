@@ -1,0 +1,19 @@
+--- origsrc/clutter-1.8.2/configure.ac	2011-11-17 03:16:21.823487700 -0600
++++ src/clutter-1.8.2/configure.ac	2011-11-17 03:15:29.832514000 -0600
+@@ -76,14 +76,14 @@ CLUTTER_LT_CURRENT=lt_current
+ CLUTTER_LT_REV=lt_revision
+ CLUTTER_LT_AGE=lt_age
+ CLUTTER_LT_VERSION="$CLUTTER_LT_CURRENT:$CLUTTER_LT_REV:$CLUTTER_LT_AGE"
+-CLUTTER_LT_LDFLAGS="-version-info $CLUTTER_LT_VERSION"
++CLUTTER_LT_LDFLAGS="-version-info $CLUTTER_LT_VERSION -no-undefined"
+ 
+ AC_PROG_SED
+ 
+ AC_CANONICAL_HOST
+ AC_MSG_CHECKING([if building for some Win32 platform])
+ AS_CASE([$host],
+-        [*-*-mingw*|*-*-cygwin*],
++        [*-*-mingw*],
+         [
+           CLUTTER_LT_LDFLAGS="$CLUTTER_LT_LDFLAGS -no-undefined"
+           platform_win32=yes

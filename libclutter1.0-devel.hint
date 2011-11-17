@@ -1,5 +1,5 @@
 category: X11
-requires: libclutter1.0_0 libatk1.0-devel libcairo-devel libgdk_pixbuf2.0-devel libglib2.0-devel libGL-devel libjson-glib1.0-devel libpango1.0-devel libX11-devel libXcomposite-devel libXdamage-devel libXext-devel libXfixes-devel libXi-devel
+requires: libclutter1.0_0 libatk1.0-devel libcairo-devel libcogl-devel libfontconfig-devel libglib2.0-devel libjson-glib1.0-devel libpango1.0-devel libX11-devel libXcomposite-devel libXdamage-devel libXi-devel
 external-source: clutter1.0
 sdesc: "OpenGL-based animated GUI library (libdevel)"
 ldesc: "Clutter is an open source software library for creating fast, 
