@@ -2,19 +2,19 @@ ORIG_PN="clutter"
 inherit gnome2
 
 NAME="clutter1.0"
-VERSION=1.12.2
+VERSION=1.14.4
 RELEASE=1
-CATEGORY="X11"
+CATEGORY="Libs"
 SUMMARY="OpenGL-based animated GUI library"
 DESCRIPTION="Clutter is an open source software library for creating fast,
 visually rich and animated graphical user interfaces. Clutter uses OpenGL for
 rendering but with an API which hides the underlying GL complexity from the
 developer. The API is intended to be easy to use, efficient and flexible."
 HOMEPAGE="http://clutter-project.org/"
-#SRC_URI="http://source.clutter-project.org/sources/${ORIG_PN}/${PV_MAJ_MIN}/${ORIG_PN}-${PV}.tar.xz"
+
 PATCH_URI="1.8.2-cygwin.patch"
 
-PKG_NAMES="lib${PN}_0 lib${PN}-devel girepository-Clutter1.0"
+PKG_NAMES="lib${NAME}_0 lib${NAME}-devel girepository-Clutter1.0"
 libclutter1_0_0_CONTENTS="usr/bin/*-1.0-0.dll usr/share/doc/ usr/share/locale/"
 libclutter1_0_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/"
 girepository_Clutter1_0_CONTENTS="usr/*/gir*/*-1.0.*"
