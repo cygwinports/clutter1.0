@@ -2,7 +2,7 @@ ORIG_PN="clutter"
 inherit gnome2
 
 NAME="clutter1.0"
-VERSION=1.14.4
+VERSION=1.14.6
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="OpenGL-based animated GUI library"
@@ -21,7 +21,15 @@ girepository_Clutter1_0_CONTENTS="usr/*/gir*/*-1.0.*"
 
 DIFF_EXCLUDES="clutter-*.h .gitignore README"
 
-CYGCONF_ARGS="--with-flavour=glx"
+CYGCONF_ARGS="
+	--enable-gdk-backend
+	--enable-x11-backend
+	--disable-cex100-backend
+	--disable-egl-backend
+	--disable-quartz-backend
+	--disable-wayland-backend
+	--disable-win32-backend
+"
 
 src_install() {
 	cd ${B}
