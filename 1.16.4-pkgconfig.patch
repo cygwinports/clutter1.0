@@ -1,0 +1,19 @@
+--- origsrc/clutter-1.16.4/clutter/clutter.pc.in	2014-01-14 11:29:56.000000000 -0600
++++ src/clutter-1.16.4/clutter/clutter.pc.in	2014-03-20 05:08:08.473915000 -0500
+@@ -4,8 +4,6 @@ libdir=@libdir@
+ includedir=@includedir@
+ 
+ apiversion=@CLUTTER_API_VERSION@
+-requires=@CLUTTER_REQUIRES@
+-requires_private=@CLUTTER_REQUIRES_PRIVATE@
+ backends=@CLUTTER_BACKENDS@
+ 
+ # only kept for backward compatibility
+@@ -20,5 +18,5 @@ Description: Clutter Core Library
+ Version: @VERSION@
+ Libs: -L${libdir} -lclutter-${apiversion}
+ Cflags: -I${includedir}/clutter-${apiversion}
+-Requires: ${requires}
+-Requires.private: ${requires_private}
++Requires: @CLUTTER_REQUIRES@
++Requires.private: @CLUTTER_REQUIRES_PRIVATE@
