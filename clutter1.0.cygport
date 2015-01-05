@@ -2,7 +2,7 @@ ORIG_PN="clutter"
 inherit gnome2
 
 NAME="clutter1.0"
-VERSION=1.16.4
+VERSION=1.20.0
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="OpenGL-based animated GUI library"
@@ -13,7 +13,6 @@ developer. The API is intended to be easy to use, efficient and flexible."
 HOMEPAGE="http://clutter-project.org/"
 
 PATCH_URI="
-	fedora/0001-stage-cogl-Fix-buffer_age-code-path.patch
 	1.8.2-cygwin.patch
 	1.16.4-pkgconfig.patch
 "
