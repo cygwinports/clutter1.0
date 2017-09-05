@@ -2,7 +2,7 @@ ORIG_PN="clutter"
 inherit gnome2
 
 NAME="clutter1.0"
-VERSION=1.26.0
+VERSION=1.26.2
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="OpenGL-based animated GUI library"
